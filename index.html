@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Trinity Church Debden | Welcome to Our Community in Loughton</title>
+    <meta name="description" content="Welcome to Trinity Church Debden, a loving community church in Loughton. Join us for Sunday worship, Messy Church, and community events on Mannock Drive.">
+    <meta name="keywords" content="Trinity Church Debden, Loughton church, community church IG10, Sunday worship Loughton, Methodist church Debden">
+    <meta name="author" content="Trinity Church Debden">
+    
+    <meta property="og:title" content="Trinity Church Debden | Welcome to Our Community">
+    <meta property="og:description" content="We are committed to loving God and serving our community. Check out our upcoming events and Sunday worship times.">
+    <meta property="og:image" content="Trinitychurchdebden.webp">
+    <meta property="og:url" content="https://trinitychurchdebden.org.uk/"> <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/webp" href="Trinitychurchdebden.webp">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Church",
+      "name": "Trinity Church Debden",
+      "image": "Trinitychurchdebden.webp",
+      "url": "https://trinitychurchdebden.org.uk/",
+      "telephone": "07961897445",
+      "email": "trinitychurchdebden@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mannock Drive",
+        "addressLocality": "Loughton",
+        "postalCode": "IG10 2JD",
+        "addressCountry": "UK"
+      },
+      "description": "A community church in the heart of Debden committed to loving God, serving the community, and celebrating life together."
+    }
+    </script>
+
+    <style>
+        :root {
+            --methodist-red: #c51718; /* Official Pantone 186 Hex */
+            --logo-green: #4CAF50; /* Green from logo */
+            --logo-orange: #FF9800; /* Orange from logo */
+            --logo-red: #E53935; /* Red from logo */
+            --logo-yellow: #FFEB3B; /* Yellow from logo */
+            --text-dark: #333;
+            --text-light: #666;
+            --bg-white: #fff;
+            --bg-light-grey: #f7f7f7;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+            line-height: 1.6;
+        }
+
+        /* Top Brand Accent Line */
+        .brand-bar {
+            height: 10px;
+            width: 100%;
+            background-color: var(--methodist-red);
+        }
+
+        /* Main Grid */
+        .page-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: calc(100vh - 10px - 60px); /* Adjust for color bar and footer */
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Left Column: Text & Branding */
+        .branding-col {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding-right: 2rem;
+        }
+
+        /* Logo and Header */
+        .logo-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+        
+        /* Dark Wrapper for the Logo */
+        .logo-wrapper {
+            background-color: #111111; 
+            padding: 1.25rem 1.5rem; 
+            border-radius: 10px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            max-width: max-content; 
+        }
+
+        .main-logo {
+            max-width: 180px; 
+            height: auto;
+            display: block;
+        }
+
+        /* Main Headers */
+        .title-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--text-dark);
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+
+        /* Alert Boxes (Status & Events) */
+        .alert-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .status-box {
+            background-color: var(--bg-light-grey);
+            border-left: 6px solid var(--methodist-red);
+            padding: 1.5rem;
+            border-radius: 4px;
+        }
+        .status-box h2 {
+            font-size: 1.3rem;
+            color: var(--methodist-red);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+        .status-box p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        /* Special Event Box */
+        .event-box {
+            background-color: #fff9e6; /* Soft orange background */
+            border-left: 6px solid var(--logo-orange);
+            padding: 1.5rem;
+            border-radius: 4px;
+        }
+        .event-box h2 {
+            font-size: 1.3rem;
+            color: #d97d00; /* Darker orange for readable contrast */
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+        .event-box h3 {
+            font-size: 1.05rem;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+        .event-box p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        .event-list {
+            margin: 0.5rem 0 0 1.25rem;
+            padding: 0;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+        .event-list li {
+            margin-bottom: 0.25rem;
+        }
+
+        /* Information Sections */
+        .info-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .info-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        .info-item h3 {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .info-item p, .info-item address {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            font-style: normal;
+            margin: 0;
+        }
+        .info-item a {
+            color: var(--methodist-red);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .info-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Styled Service Times List */
+        .service-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding-left: 0.5rem;
+            margin: 0;
+        }
+        .service-item {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: start;
+            gap: 0.75rem;
+        }
+        .leaf-icon {
+            width: 18px;
+            height: 18px;
+            margin-top: 3px;
+        }
+        .leaf-green { color: var(--logo-green); }
+        .leaf-orange { color: var(--logo-orange); }
+        .leaf-red { color: var(--logo-red); }
+        .leaf-yellow { color: var(--logo-yellow); }
+        .time-label {
+            font-weight: bold;
+            color: var(--text-dark);
+        }
+        .service-title {
+            color: var(--text-light);
+            display: block;
+        }
+
+        /* Text Blocks */
+        .text-block {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .text-block h3 {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            margin: 0;
+        }
+        .text-block p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        /* Primary Button */
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--methodist-red);
+            color: #ffffff !important;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 0.5rem;
+            transition: background-color 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: fit-content;
+        }
+        .btn-primary:hover {
+            background-color: #a01213;
+            text-decoration: none !important;
+        }
+
+        /* Right Column: Framed Art */
+        .art-col {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .framed-art-container {
+            border: 20px solid #fff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            background-color: #f7f7f7;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .watercolor-painting {
+            width: 100%;
+            height: auto;
+            max-width: 600px;
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            height: 60px;
+            background-color: var(--bg-light-grey);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.85rem;
+            color: #888;
+            border-top: 1px solid #eee;
+        }
+
+        /* Subdivider Leaf */
+        .subdivider {
+            color: #eee;
+            margin: 1rem 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Subtle leaf icon path for reuse */
+        .leaf-path { fill: currentColor; }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .page-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 1.5rem;
+            }
+            .branding-col {
+                padding-right: 0;
+            }
+            .logo-wrapper {
+                max-width: 100%;
+                padding: 1rem 1.25rem;
+            }
+            .art-col {
+                order: -1; /* Art moves above text on mobile */
+                margin-top: 1rem;
+            }
+            .main-logo {
+                max-width: 140px; 
+            }
+            h1 { font-size: 1.8rem; }
+            .framed-art-container {
+                border-width: 10px;
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="brand-bar"></div>
+
+    <div class="page-container">
+        
+        <main class="branding-col">
+            
+            <header class="logo-section">
+                <div class="logo-wrapper">
+                    <img src="trinitylogo.webp" alt="Trinity Church Logo" class="main-logo">
+                </div>
+                
+                <div class="title-group">
+                    <h1>TRINITY CHURCH DEBDEN</h1>
+                </div>
+            </header>
+
+            <div class="alert-group">
+                <div class="status-box">
+                    <h2>FULL WEBSITE COMING SOON</h2>
+                    <p>Check back shortly for updates, service times, and events. Our new digital home is under construction.</p>
+                </div>
+
+                <div class="event-box">
+                    <h2>Upcoming: Community Day</h2>
+                    <h3>18th July &bull; 12:00 PM - 3:00 PM</h3>
+                    <p><strong>Debden Heritage & Hope:</strong> Join us for a community fun day for all! We'll be exploring the history of Debden and sharing hopes for the future.</p>
+                    <ul class="event-list">
+                        <li>Live music & Games</li>
+                        <li>Bouncy Castle</li>
+                        <li>Ice Cream Van & BBQ</li>
+                        <li>Pop-up Tea Room</li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="info-section">
+                
+                <div class="text-block">
+                    <h3>OUR VISION</h3>
+                    <p>We are a small community church based in the heart of Debden. We are committed to loving God, serving our community and celebrating life together and we’re doing this through worship, community listening, community socials and hiring our building.</p>
+                    
+                    <p style="margin-top: 1rem;"><strong>Help shape our future:</strong></p>
+                    <a href="https://trinitychurchsurvey.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-primary">Take Our Community Survey</a>
+                </div>
+
+                <div class="subdivider">
+                    <svg viewBox="0 0 18 18" class="leaf-icon" style="color: #eee;"><path class="leaf-path" d="M11.6,1C11.6,1,10.6,3,9.6,5C9.3,5.6,9.1,6.2,8.9,6.7C8.7,7.2,8.6,7.8,8.4,8.4L8.4,8.4C8.2,9,8.1,9.6,7.9,10.2C7.7,10.8,7.6,11.4,7.4,12L7.4,12C7.2,12.6,7.1,13.2,6.9,13.8C6.7,14.4,6.6,15,6.4,15.6L6.4,15.6C6.2,16.2,6.1,16.8,5.9,17.4C5.7,18,5.6,18.6,5.4,19.2L5.4,19.2C5.2,19.8,5.1,20.4,4.9,21C4.7,21.6,4.6,22.2,4.4,22.8L4.4,22.8C4.2,23.4,4.1,24,3.9,24.6C3.7,25.2,3.6,25.8,3.4,26.4L3.4,26.4C3.2,27,3.1,27.6,2.9,28.2C2.7,28.8,2.6,29.4,2.4,30L2.4,30C2.2,30.6,2.1,31.2,1.9,31.8C1.7,32.4,1.6,33,1.4,33.6L1.4,33.6C1.2,34.2,1.1,34.8,0.9,35.4C0.7,36,0.6,36.6,0.4,37.2L0.4,37.2C0.2,37.8,0.1,38.4,-0.1,39L-0.1,39C-0.3,39.6,-0.4,40.2,-0.6,40.8C-0.8,41.4,-0.9,42,-1.1,42.6L-1.1,42.6C-1.3,43.2,-1.4,43.8,-1.6,44.4C-1.8,45,-1.9,45.6,-2.1,46.2L-2.1,46.2C-2.3,46.8,-2.4,47.4,-2.6,48C-2.8,48.6,-2.9,49.2,-3.1,49.8L-3.1,49.8C-3.3,50.4,-3.4,51,-3.6,51.6C-3.8,52.2,-3.9,52.8,-4.1,53.4L-4.1,53.4C-4.3,54,-4.4,54.6,-4.6,55.2C-4.8,55.8,-4.9,56.4,-5.1,57L-5.1,57C-5.3,57.6,-5.4,58.2,-5.6,58.8C-5.8,59.4,-5.9,60,-6.1,60.6L-6.1,60.6C-6.3,61.2,-6.4,61.8,-6.6,62.4C-6.8,63,-6.9,63.6,-7.1,64.2L-7.1,64.2C-7.3,64.8,-7.4,65.4,-7.6,66C-7.8,66.6,-7.9,67.2,-8.1,67.8L-8.1,67.8C-8.3,68.4,-8.4,69,-8.6,69.6C-0.7,69.6,7.1,69.6,15.1,69.6C15.1,61.6,15.1,53.7,15.1,45.7C15.1,37.7,15.1,29.8,15.1,21.8C15.1,13.8,15.1,5.9,15.1,-2.1C7.1,-2.1,-0.8,-2.1,-8.7,-2.1C-8.7,-2.1,-8.7,-2.1,-8.7,-2.1Z"/></svg>
+                </div>
+
+                <div class="info-item">
+                    <h3>SUNDAY WORSHIP & COMMUNITY EVENTS</h3>
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <svg viewBox="0 0 18 18" class="leaf-icon leaf-green"><path class="leaf-path" d="M11.6,1C11.6,1,10.6,3,9.6,5C9.3,5.6,9.1,6.2,8.9,6.7C8.7,7.2,8.6,7.8,8.4,8.4L8.4,8.4C8.2,9,8.1,9.6,7.9,10.2C7.7,10.8,7.6,11.4,7.4,12L7.4,12C7.2,12.6,7.1,13.2,6.9,13.8C6.7,14.4,6.6,15,6.4,15.6L6.4,15.6C6.2,16.2,6.1,16.8,5.9,17.4C5.7,18,5.6,18.6,5.4,19.2L5.4,19.2C5.2,19.8,5.1,20.4,4.9,21C4.7,21.6,4.6,22.2,4.4,22.8L4.4,22.8C4.2,23.4,4.1,24,3.9,24.6C3.7,25.2,3.6,25.8,3.4,26.4L3.4,26.4C3.2,27,3.1,27.6,2.9,28.2C2.7,28.8,2.6,29.4,2.4,30L2.4,30C2.2,30.6,2.1,31.2,1.9,31.8C1.7,32.4,1.6,33,1.4,33.6L1.4,33.6C1.2,34.2,1.1,34.8,0.9,35.4C0.7,36,0.6,36.6,0.4,37.2L0.4,37.2C0.2,37.8,0.1,38.4,-0.1,39L-0.1,39C-0.3,39.6,-0.4,40.2,-0.6,40.8C-0.8,41.4,-0.9,42,-1.1,42.6L-1.1,42.6C-1.3,43.2,-1.4,43.8,-1.6,44.4C-1.8,45,-1.9,45.6,-2.1,46.2L-2.1,46.2C-2.3,46.8,-2.4,47.4,-2.6,48C-2.8,48.6,-2.9,49.2,-3.1,49.8L-3.1,49.8C-3.3,50.4,-3.4,51,-3.6,51.6C-3.8,52.2,-3.9,52.8,-4.1,53.4L-4.1,53.4C-4.3,54,-4.4,54.6,-4.6,55.2C-4.8,55.8,-4.9,56.4,-5.1,57L-5.1,57C-5.3,57.6,-5.4,58.2,-5.6,58.8C-5.8,59.4,-5.9,60,-6.1,60.6L-6.1,60.6C-6.3,61.2,-6.4,61.8,-6.6,62.4C-6.8,63,-6.9,63.6,-7.1,64.2L-7.1,64.2C-7.3,64.8,-7.4,65.4,-7.6,66C-7.8,66.6,-7.9,67.2,-8.1,67.8L-8.1,67.8C-8.3,68.4,-8.4,69,-8.6,69.6C-0.7,69.6,7.1,69.6,15.1,69.6C15.1,61.6,15.1,53.7,15.1,45.7C15.1,37.7,15.1,29.8,15.1,21.8C15.1,13.8,15.1,5.9,15.1,-2.1C7.1,-2.1,-0.8,-2.1,-8.7,-2.1C-8.7,-2.1,-8.7,-2.1,-8.7,-2.1Z"/></svg>
+                            <div>
+                                <span class="time-label">1st & 5th Sundays: 10:30am</span>
+                                <span class="service-title">Morning Worship</span>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <svg viewBox="0 0 18 18" class="leaf-icon leaf-orange"><path class="leaf-path" d="M11.6,1C11.6,1,10.6,3,9.6,5C9.3,5.6,9.1,6.2,8.9,6.7C8.7,7.2,8.6,7.8,8.4,8.4L8.4,8.4C8.2,9,8.1,9.6,7.9,10.2C7.7,10.8,7.6,11.4,7.4,12L7.4,12C7.2,12.6,7.1,13.2,6.9,13.8C6.7,14.4,6.6,15,6.4,15.6L6.4,15.6C6.2,16.2,6.1,16.8,5.9,17.4C5.7,18,5.6,18.6,5.4,19.2L5.4,19.2C5.2,19.8,5.1,20.4,4.9,21C4.7,21.6,4.6,22.2,4.4,22.8L4.4,22.8C4.2,23.4,4.1,24,3.9,24.6C3.7,25.2,3.6,25.8,3.4,26.4L3.4,26.4C3.2,27,3.1,27.6,2.9,28.2C2.7,28.8,2.6,29.4,2.4,30L2.4,30C2.2,30.6,2.1,31.2,1.9,31.8C1.7,32.4,1.6,33,1.4,33.6L1.4,33.6C1.2,34.2,1.1,34.8,0.9,35.4C0.7,36,0.6,36.6,0.4,37.2L0.4,37.2C0.2,37.8,0.1,38.4,-0.1,39L-0.1,39C-0.3,39.6,-0.4,40.2,-0.6,40.8C-0.8,41.4,-0.9,42,-1.1,42.6L-1.1,42.6C-1.3,43.2,-1.4,43.8,-1.6,44.4C-1.8,45,-1.9,45.6,-2.1,46.2L-2.1,46.2C-2.3,46.8,-2.4,47.4,-2.6,48C-2.8,48.6,-2.9,49.2,-3.1,49.8L-3.1,49.8C-3.3,50.4,-3.4,51,-3.6,51.6C-3.8,52.2,-3.9,52.8,-4.1,53.4L-4.1,53.4C-4.3,54,-4.4,54.6,-4.6,55.2C-4.8,55.8,-4.9,56.4,-5.1,57L-5.1,57C-5.3,57.6,-5.4,58.2,-5.6,58.8C-5.8,59.4,-5.9,60,-6.1,60.6L-6.1,60.6C-6.3,61.2,-6.4,61.8,-6.6,62.4C-6.8,63,-6.9,63.6,-7.1,64.2L-7.1,64.2C-7.3,64.8,-7.4,65.4,-7.6,66C-7.8,66.6,-7.9,67.2,-8.1,67.8L-8.1,67.8C-8.3,68.4,-8.4,69,-8.6,69.6C-0.7,69.6,7.1,69.6,15.1,69.6C15.1,61.6,15.1,53.7,15.1,45.7C15.1,37.7,15.1,29.8,15.1,21.8C15.1,13.8,15.1,5.9,15.1,-2.1C7.1,-2.1,-0.8,-2.1,-8.7,-2.1C-8.7,-2.1,-8.7,-2.1,-8.7,-2.1Z"/></svg>
+                            <div>
+                                <span class="time-label">2nd Sunday: 4pm</span>
+                                <span class="service-title">Brick Church (with Lego)</span>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <svg viewBox="0 0 18 18" class="leaf-icon leaf-red"><path class="leaf-path" d="M11.6,1C11.6,1,10.6,3,9.6,5C9.3,5.6,9.1,6.2,8.9,6.7C8.7,7.2,8.6,7.8,8.4,8.4L8.4,8.4C8.2,9,8.1,9.6,7.9,10.2C7.7,10.8,7.6,11.4,7.4,12L7.4,12C7.2,12.6,7.1,13.2,6.9,13.8C6.7,14.4,6.6,15,6.4,15.6L6.4,15.6C6.2,16.2,6.1,16.8,5.9,17.4C5.7,18,5.6,18.6,5.4,19.2L5.4,19.2C5.2,19.8,5.1,20.4,4.9,21C4.7,21.6,4.6,22.2,4.4,22.8L4.4,22.8C4.2,23.4,4.1,24,3.9,24.6C3.7,25.2,3.6,25.8,3.4,26.4L3.4,26.4C3.2,27,3.1,27.6,2.9,28.2C2.7,28.8,2.6,29.4,2.4,30L2.4,30C2.2,30.6,2.1,31.2,1.9,31.8C1.7,32.4,1.6,33,1.4,33.6L1.4,33.6C1.2,34.2,1.1,34.8,0.9,35.4C0.7,36,0.6,36.6,0.4,37.2L0.4,37.2C0.2,37.8,0.1,38.4,-0.1,39L-0.1,39C-0.3,39.6,-0.4,40.2,-0.6,40.8C-0.8,41.4,-0.9,42,-1.1,42.6L-1.1,42.6C-1.3,43.2,-1.4,43.8,-1.6,44.4C-1.8,45,-1.9,45.6,-2.1,46.2L-2.1,46.2C-2.3,46.8,-2.4,47.4,-2.6,48C-2.8,48.6,-2.9,49.2,-3.1,49.8L-3.1,49.8C-3.3,50.4,-3.4,51,-3.6,51.6C-3.8,52.2,-3.9,52.8,-4.1,53.4L-4.1,53.4C-4.3,54,-4.4,54.6,-4.6,55.2C-4.8,55.8,-4.9,56.4,-5.1,57L-5.1,57C-5.3,57.6,-5.4,58.2,-5.6,58.8C-5.8,59.4,-5.9,60,-6.1,60.6L-6.1,60.6C-6.3,61.2,-6.4,61.8,-6.6,62.4C-6.8,63,-6.9,63.6,-7.1,64.2L-7.1,64.2C-7.3,64.8,-7.4,65.4,-7.6,66C-7.8,66.6,-7.9,67.2,-8.1,67.8L-8.1,67.8C-8.3,68.4,-8.4,69,-8.6,69.6C-0.7,69.6,7.1,69.6,15.1,69.6C15.1,61.6,15.1,53.7,15.1,45.7C15.1,37.7,15.1,29.8,15.1,21.8C15.1,13.8,15.1,5.9,15.1,-2.1C7.1,-2.1,-0.8,-2.1,-8.7,-2.1C-8.7,-2.1,-8.7,-2.1,-8.7,-2.1Z"/></svg>
+                            <div>
+                                <span class="time-label">3rd Sunday: 10:30am</span>
+                                <span class="service-title">with Communion</span>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <svg viewBox="0 0 18 18" class="leaf-icon leaf-yellow"><path class="leaf-path" d="M11.6,1C11.6,1,10.6,3,9.6,5C9.3,5.6,9.1,6.2,8.9,6.7C8.7,7.2,8.6,7.8,8.4,8.4L8.4,8.4C8.2,9,8.1,9.6,7.9,10.2C7.7,10.8,7.6,11.4,7.4,12L7.4,12C7.2,12.6,7.1,13.2,6.9,13.8C6.7,14.4,6.6,15,6.4,15.6L6.4,15.6C6.2,16.2,6.1,16.8,5.9,17.4C5.7,18,5.6,18.6,5.4,19.2L5.4,19.2C5.2,19.8,5.1,20.4,4.9,21C4.7,21.6,4.6,22.2,4.4,22.8L4.4,22.8C4.2,23.4,4.1,24,3.9,24.6C3.7,25.2,3.6,25.8,3.4,26.4L3.4,26.4C3.2,27,3.1,27.6,2.9,28.2C2.7,28.8,2.6,29.4,2.4,30L2.4,30C2.2,30.6,2.1,31.2,1.9,31.8C1.7,32.4,1.6,33,1.4,33.6L1.4,33.6C1.2,34.2,1.1,34.8,0.9,35.4C0.7,36,0.6,36.6,0.4,37.2L0.4,37.2C0.2,37.8,0.1,38.4,-0.1,39L-0.1,39C-0.3,39.6,-0.4,40.2,-0.6,40.8C-0.8,41.4,-0.9,42,-1.1,42.6L-1.1,42.6C-1.3,43.2,-1.4,43.8,-1.6,44.4C-1.8,45,-1.9,45.6,-2.1,46.2L-2.1,46.2C-2.3,46.8,-2.4,47.4,-2.6,48C-2.8,48.6,-2.9,49.2,-3.1,49.8L-3.1,49.8C-3.3,50.4,-3.4,51,-3.6,51.6C-3.8,52.2,-3.9,52.8,-4.1,53.4L-4.1,53.4C-4.3,54,-4.4,54.6,-4.6,55.2C-4.8,55.8,-4.9,56.4,-5.1,57L-5.1,57C-5.3,57.6,-5.4,58.2,-5.6,58.8C-5.8,59.4,-5.9,60,-6.1,60.6L-6.1,60.6C-6.3,61.2,-6.4,61.8,-6.6,62.4C-6.8,63,-6.9,63.6,-7.1,64.2L-7.1,64.2C-7.3,64.8,-7.4,65.4,-7.6,66C-7.8,66.6,-7.9,67.2,-8.1,67.8L-8.1,67.8C-8.3,68.4,-8.4,69,-8.6,69.6C-0.7,69.6,7.1,69.6,15.1,69.6C15.1,61.6,15.1,53.7,15.1,45.7C15.1,37.7,15.1,29.8,15.1,21.8C15.1,13.8,15.1,5.9,15.1,-2.1C7.1,-2.1,-0.8,-2.1,-8.7,-2.1C-8.7,-2.1,-8.7,-2.1,-8.7,-2.1Z"/></svg>
+                            <div>
+                                <span class="time-label">4th Sunday: 10:30am</span>
+                                <span class="service-title">Café Church</span>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <svg viewBox="0 0 18 18" class="leaf-icon leaf-green" style="color: #666;"><path class="leaf-path" d="M11.6,1C11.6,1,10.6,3,9.6,5C9.3,5.6,9.1,6.2,8.9,6.7C8.7,7.2,8.6,7.8,8.4,8.4L8.4,8.4C8.2,9,8.1,9.6,7.9,10.2C7.7,10.8,7.6,11.4,7.4,12L7.4,12C7.2,12.6,7.1,13.2,6.9,13.8C6.7,14.4,6.6,15,6.4,15.6L6.4,15.6C6.2,16.2,6.1,16.8,5.9,17.4C5.7,18,5.6,18.6,5.4,19.2L5.4,19.2C5.2,19.8,5.1,20.4,4.9,21C4.7,21.6,4.6,22.2,4.4,22.8L4.4,22.8C4.2,23.4,4.1,24,3.9,24.6C3.7,25.2,3.6,25.8,3.4,26.4L3.4,26.4C3.2,27,3.1,27.6,2.9,28.2C2.7,28.8,2.6,29.4,2.4,30L2.4,30C2.2,30.6,2.1,31.2,1.9,31.8C1.7,32.4,1.6,33,1.4,33.6L1.4,33.6C1.2,34.2,1.1,34.8,0.9,35.4C0.7,36,0.6,36.6,0.4,37.2L0.4,37.2C0.2,37.8,0.1,38.4,-0.1,39L-0.1,39C-0.3,39.6,-0.4,40.2,-0.6,40.8C-0.8,41.4,-0.9,42,-1.1,42.6L-1.1,42.6C-1.3,43.2,-1.4,43.8,-1.6,44.4C-1.8,45,-1.9,45.6,-2.1,46.2L-2.1,46.2C-2.3,46.8,-2.4,47.4,-2.6,48C-2.8,48.6,-2.9,49.2,-3.1,49.8L-3.1,49.8C-3.3,50.4,-3.4,51,-3.6,51.6C-3.8,52.2,-3.9,52.8,-4.1,53.4L-4.1,53.4C-4.3,54,-4.4,54.6,-4.6,55.2C-4.8,55.8,-4.9,56.4,-5.1,57L-5.1,57C-5.3,57.6,-5.4,58.2,-5.6,58.8C-5.8,59.4,-5.9,60,-6.1,60.6L-6.1,60.6C-6.3,61.2,-6.4,61.8,-6.6,62.4C-6.8,63,-6.9,63.6,-7.1,64.2L-7.1,64.2C-7.3,64.8,-7.4,65.4,-7.6,66C-7.8,66.6,-7.9,67.2,-8.1,67.8L-8.1,67.8C-8.3,68.4,-8.4,69,-8.6,69.6C-0.7,69.6,7.1,69.6,15.1,69.6C15.1,61.6,15.1,53.7,15.1,45.7C15.1,37.7,15.1,29.8,15.1,21.8C15.1,13.8,15.1,5.9,15.1,-2.1C7.1,-2.1,-0.8,-2.1,-8.7,-2.1C-8.7,-2.1,-8.7,-2.1,-8.7,-2.1Z"/></svg>
+                            <div>
+                                <span class="time-label">Quarterly: 4-6pm</span>
+                                <span class="service-title">Messy Church</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="subdivider">
+                    <svg viewBox="0 0 18 18" class="leaf-icon" style="color: #eee;"><path class="leaf-path" d="M11.6,1C11.6,1,10.6,3,9.6,5C9.3,5.6,9.1,6.2,8.9,6.7C8.7,7.2,8.6,7.8,8.4,8.4L8.4,8.4C8.2,9,8.1,9.6,7.9,10.2C7.7,10.8,7.6,11.4,7.4,12L7.4,12C7.2,12.6,7.1,13.2,6.9,13.8C6.7,14.4,6.6,15,6.4,15.6L6.4,15.6C6.2,16.2,6.1,16.8,5.9,17.4C5.7,18,5.6,18.6,5.4,19.2L5.4,19.2C5.2,19.8,5.1,20.4,4.9,21C4.7,21.6,4.6,22.2,4.4,22.8L4.4,22.8C4.2,23.4,4.1,24,3.9,24.6C3.7,25.2,3.6,25.8,3.4,26.4L3.4,26.4C3.2,27,3.1,27.6,2.9,28.2C2.7,28.8,2.6,29.4,2.4,30L2.4,30C2.2,30.6,2.1,31.2,1.9,31.8C1.7,32.4,1.6,33,1.4,33.6L1.4,33.6C1.2,34.2,1.1,34.8,0.9,35.4C0.7,36,0.6,36.6,0.4,37.2L0.4,37.2C0.2,37.8,0.1,38.4,-0.1,39L-0.1,39C-0.3,39.6,-0.4,40.2,-0.6,40.8C-0.8,41.4,-0.9,42,-1.1,42.6L-1.1,42.6C-1.3,43.2,-1.4,43.8,-1.6,44.4C-1.8,45,-1.9,45.6,-2.1,46.2L-2.1,46.2C-2.3,46.8,-2.4,47.4,-2.6,48C-2.8,48.6,-2.9,49.2,-3.1,49.8L-3.1,49.8C-3.3,50.4,-3.4,51,-3.6,51.6C-3.8,52.2,-3.9,52.8,-4.1,53.4L-4.1,53.4C-4.3,54,-4.4,54.6,-4.6,55.2C-4.8,55.8,-4.9,56.4,-5.1,57L-5.1,57C-5.3,57.6,-5.4,58.2,-5.6,58.8C-5.8,59.4,-5.9,60,-6.1,60.6L-6.1,60.6C-6.3,61.2,-6.4,61.8,-6.6,62.4C-6.8,63,-6.9,63.6,-7.1,64.2L-7.1,64.2C-7.3,64.8,-7.4,65.4,-7.6,66C-7.8,66.6,-7.9,67.2,-8.1,67.8L-8.1,67.8C-8.3,68.4,-8.4,69,-8.6,69.6C-0.7,69.6,7.1,69.6,15.1,69.6C15.1,61.6,15.1,53.7,15.1,45.7C15.1,37.7,15.1,29.8,15.1,21.8C15.1,13.8,15.1,5.9,15.1,-2.1C7.1,-2.1,-0.8,-2.1,-8.7,-2.1C-8.7,-2.1,-8.7,-2.1,-8.7,-2.1Z"/></svg>
+                </div>
+
+                <div class="info-item">
+                    <h3>CONNECT WITH US</h3>
+                    <p>Primary Contact: Sue</p>
+                    <p>Phone: <a href="tel:07961897445">07961 897445</a></p>
+                    <p>Email: <a href="mailto:sue@loughtonmethodist.org.uk">sue@loughtonmethodist.org.uk</a></p>
+                    <p>Church Email: <a href="mailto:trinitychurchdebden@gmail.com">trinitychurchdebden@gmail.com</a></p>
+                </div>
+
+                <div class="info-item">
+                    <h3>VISIT US</h3>
+                    <address>
+                        Mannock Drive, Loughton, IG10 2JD, United Kingdom.
+                    </address>
+                </div>
+
+            </section>
+
+        </main>
+
+        <aside class="art-col">
+            <div class="framed-art-container">
+                <img src="Trinitychurchdebden.webp" alt="Trinity Church Debden Watercolor Painting and sign" class="watercolor-painting">
+            </div>
+        </aside>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Trinity Church Debden. All rights reserved.
+    </footer>
+
+</body>
+</html>
